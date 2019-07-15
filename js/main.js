@@ -112,7 +112,7 @@ function startMatch() {
 
 // Sprawdz obecne slowo z wordInput
 function matchWords() {
-  if (wordInput.value === currentWord.innerHTML) {
+  if (wordInput.value.toLowerCase() === currentWord.innerHTML) {
     message.innerHTML = "Dobrze!";
     return true;
   } else {
