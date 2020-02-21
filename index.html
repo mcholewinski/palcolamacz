@@ -11,18 +11,9 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <style>
-      .unselectable { 
-      -webkit-user-select: none; 
-      -webkit-touch-callout: none; 
-      -moz-user-select: none; 
-      -ms-user-select: none; 
-       user-select: none;
-      }
-    </style>
     <!-- <link rel="stylesheet" href="style.css" /> -->
   </head>
-  <body class="bg-dark text-white unselectable" onmousedown="return false" onselectstart="return false">
+  <body class="bg-dark text-white">
     <header
       class="text-center text-secondary p-3 mb-5"
       style="background: rgba(255,255,255,1);
@@ -48,6 +39,7 @@
             class="display-2 mb-5 mx-auto"
             id="current-word"
             style="word-wrap: break-word; max-width: 100%;"
+            onmousedown="return false" onselectstart="return false"
           ></h2>
           <input
             type="text"
